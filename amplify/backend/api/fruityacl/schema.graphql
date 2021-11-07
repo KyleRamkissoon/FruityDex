@@ -1,0 +1,33 @@
+type FruitSuggestions @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  userId: String
+  details: String
+  status: String
+  name: String
+}
+
+type UserFruitTable @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  userId: String
+  userEmail: String
+  fruitId: String
+  fruitColor: [String]
+  fruitName: String
+  fruitWeight: String
+  fruitDetails: String
+  fruitLocation: String
+  fruitAliases: [String]
+  fruitShape: String
+}
+
+type Fruit @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  color: [String]
+  shape: String
+  weight: Float
+  details: String
+  location: String
+  aliases: [String]
+}
+ 

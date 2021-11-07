@@ -16,6 +16,26 @@ import {
 import CIcon from '@coreui/icons-react'
 import { cilLockLocked, cilUser } from '@coreui/icons'
 
+import { Auth } from 'aws-amplify'
+
+async function signIn() {
+  try {
+    let username
+    let password
+    const user = await Auth.signIn(username, password)
+  } catch (error) {
+    console.log('error signing in', error)
+  }
+}
+
+async function signOut() {
+  try {
+    await Auth.signOut()
+  } catch (error) {
+    console.log('error signing out: ', error)
+  }
+}
+
 const Login = () => {
   return (
     <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
