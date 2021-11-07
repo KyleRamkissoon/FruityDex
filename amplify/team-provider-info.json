@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-fruityacl-dev-231546-authRole",
+      "UnauthRoleArn": "arn:aws:iam::876782736012:role/amplify-fruityacl-dev-231546-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::876782736012:role/amplify-fruityacl-dev-231546-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-fruityacl-dev-231546-deployment",
+      "UnauthRoleName": "amplify-fruityacl-dev-231546-unauthRole",
+      "StackName": "amplify-fruityacl-dev-231546",
+      "StackId": "arn:aws:cloudformation:us-east-2:876782736012:stack/amplify-fruityacl-dev-231546/d5d44f70-2956-11ec-a124-061c6c4c0322",
+      "AmplifyAppId": "d2tliicblwjtm3"
+    },
+    "categories": {
+      "auth": {
+        "fruityacl": {}
+      },
+      "function": {
+        "AdminQueries847fb5aa": {
+          "deploymentBucketName": "amplify-fruityacl-dev-231546-deployment",
+          "s3Key": "amplify-builds/AdminQueries847fb5aa-51784e464a654a66364e-build.zip"
+        }
+      }
+    }
+  }
+}
