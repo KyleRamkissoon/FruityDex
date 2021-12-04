@@ -5,7 +5,7 @@
 * Admins can Perform CRUD functions on fruits as well as view user suggestions and evaluate them.
 
 
-### Instalation
+### Installation
 
 ``` bash
 $ npm install
