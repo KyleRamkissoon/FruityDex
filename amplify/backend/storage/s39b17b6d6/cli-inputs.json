@@ -1,0 +1,13 @@
+{
+  "resourceName": "s39b17b6d6",
+  "bucketName": "fruitacl0743275ed28c4cb19d8043d962594299",
+  "policyUUID": "d0a6d4aa",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE"
+}
