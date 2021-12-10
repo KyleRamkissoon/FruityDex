@@ -15,8 +15,8 @@ import PropTypes from 'prop-types'
 const FruitForm = (props) => {
   let addFruitHandler = props.addFruitHandler
   let closeModalHandler = props.closeModalHandler
-  let item = props.fruitItem // item from AddFruit or EditFruit, if add, empty object, otherwise set values from fruitItem from update fruit from fruitdetails
-  let type = props.type // update? add?
+  let item = props.fruitItem
+  let type = props.type
   let user = props.user
   let userGroups = props.userGroups
 
@@ -45,22 +45,7 @@ const FruitForm = (props) => {
     closeModalHandler()
   }
   const validate = (values) => {
-    // console.log('values to validate: ', values)
     const errors = {}
-    // todo validate that the current user is an admin?
-    // todo use FruitsController to query db on submitted fruit name,
-    // todo if the fruit exists, complain.
-    // if (type === 'add') {
-    //   if (fileList.length <= 0) {
-    //     errors.fileList = 'Invalid Image!!'
-    //   }
-    // }
-    // if (values.fruitWeight <= 0) {
-    //   errors.fruitWeight = 'Invalid Weight, value supplied: ' + values.fruitWeight
-    // }
-    // if (!values.fruitStatus) {
-    //   errors.fruitStatus = 'invalid status, value supplied: ' + values.fruitStatus
-    // }
     console.log('errors: ', errors)
     return errors
   }

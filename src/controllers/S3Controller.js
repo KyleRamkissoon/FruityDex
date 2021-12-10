@@ -9,32 +9,14 @@ class S3Controller {
       user_avatars: 'user_avatars/',
     }
   }
-
-  // util stuff
-
-  /*
-    name = banana
-    return bananXXXXXXXXXXXXXXXXXXXX
-   */
   getSaltedImageName(name) {
     return name.substring(0, 5) + randomBytes(20).toString('hex')
   }
-
-  // backend stuff
-  /*
-    store the image but return the promise so we can use the response
-    returns {key: "imagedirector/imagename.png"}
-   */
   async putStoreImage(filename, fileList) {
-    return await Storage.put(filename, fileList[0]) // todo does this return the promise?
+    return await Storage.put(filename, fileList[0])
   }
-
-  /*
-    get the image object from the s3 bucket
-    returns storage object?
-   */
   async getStorageItem(filename) {
-    return await Storage.list(filename) // for listing ALL files without prefix, pass '' instead
+    return await Storage.list(filename)
   }
 
   // custom controller logic

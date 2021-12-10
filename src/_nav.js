@@ -28,7 +28,7 @@ const _nav = [
   },
   {
     component: CNavItem,
-    name: 'Suggestions', //is linked to profile for now
+    name: 'Suggestions',
     to: '/suggestions',
     icon: <CIcon icon={cilBell} customClassName="nav-icon" />,
   },

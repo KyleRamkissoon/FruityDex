@@ -81,8 +81,6 @@ const DefaultLayout = () => {
       setFruitSuggestions(r)
     })
   }, [])
-
-  // prop filling stuff 😲
   const removeFruitHandler = async (item) => {
     fruitsController.delete(item.id).then((r) => {
       if (item.status === 'APPROVED') {
@@ -185,14 +183,6 @@ const DefaultLayout = () => {
       // eslint-disable-next-line no-unused-vars
       let removedItem = newFavs.splice(newFavs.indexOf(item), 1)
       setFavFruits(newFavs)
-
-      // userDetailsController.removeFav(userDetails, item.id).then((response) => {
-      //   setUserDetails(response)
-      //   let newFavs = [...favFruits]
-      //   // eslint-disable-next-line no-unused-vars
-      //   let removedItem = newFavs.splice(newFavs.indexOf(item), 1)
-      //   setFavFruits(newFavs)
-      // })
     }
   }
   const addFavHandler = async (item) => {
@@ -210,13 +200,6 @@ const DefaultLayout = () => {
       fruitsController.query(item.id).then((fruit) => {
         setFavFruits((oldArray) => [...oldArray, fruit])
       })
-
-      // userDetailsController.addFav(userDetails, item.id).then((response) => {
-      //   setUserDetails(response)
-      //   fruitsController.query(item.id).then((fruit) => {
-      //     setFavFruits((oldArray) => [...oldArray, fruit])
-      //   })
-      // })
     }
   }
 

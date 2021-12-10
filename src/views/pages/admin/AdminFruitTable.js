@@ -5,10 +5,6 @@ import AdminFruitSmartTable from '../../../components/SmartTables/AdminFruitSmar
 import Page500 from '../page500/Page500'
 import PropTypes from 'prop-types'
 
-/*
-  this file will have to be refactored to accommodate the fruits from the backend, for now it
-  will print the images.
- */
 const AdminFruitTable = (props) => {
   let userGroups = props.userGroups
 
