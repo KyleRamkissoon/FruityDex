@@ -18,7 +18,7 @@ import {
 import PropTypes from 'prop-types'
 import { AmplifyS3Image } from '@aws-amplify/ui-react'
 import FruitDetails from './FruitDetails'
-import JjLoadingButton from '../JjLoadingButton'
+import LoadingButton from '../LoadingButton'
 
 const FruitItem = (props) => {
   let item = props.fruitItem
@@ -62,7 +62,7 @@ const FruitItem = (props) => {
                   Remove Favorite
                 </CButton>
               ) : (
-                <JjLoadingButton
+                <LoadingButton
                   color="success"
                   size="sm"
                   handler={addToFavs}

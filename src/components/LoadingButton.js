@@ -1,13 +1,8 @@
-/**
- * coreui bitchass have the fancy spinny button tek, i gonna try and make it myself kekw
- *
- */
-
 import React, { useState } from 'react'
 import { CButton, CSpinner } from '@coreui/react'
 import PropTypes from 'prop-types'
 
-const JjLoadingButton = (props) => {
+const LoadingButton = (props) => {
   let handler = props.handler
   let timeout = props.timeout
   let text = props.text
@@ -47,7 +42,7 @@ const JjLoadingButton = (props) => {
   }
 }
 
-JjLoadingButton.propTypes = {
+LoadingButton.propTypes = {
   handler: PropTypes.func.isRequired,
   timeout: PropTypes.number.isRequired,
   text: PropTypes.string.isRequired,
@@ -55,4 +50,4 @@ JjLoadingButton.propTypes = {
   color: PropTypes.string.isRequired,
 }
 
-export default JjLoadingButton
+export default LoadingButton
