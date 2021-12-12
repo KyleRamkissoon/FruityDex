@@ -2,7 +2,7 @@
 # TMG inc FruityDex Application
 
 * This is a fruit catalog which allows users to browse and view regional fruits, add them to a favorites list as well as send their fruit suggestions to admins.
-* Admins can Perform CRUD functions on fruits as well as view user suggestions and evaluate them.
+* Admins can Perform CRUD functions on fruits as well as view user suggestions and evaluate them for confirmation and moderation.
 
 
 ### Installation
