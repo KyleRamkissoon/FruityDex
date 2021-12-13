@@ -56,6 +56,8 @@
   },
   "devDependencies": {
     "auto-changelog": "~2.3.0",
+    "cypress": "^9.1.1",
+    "cypress-localstorage-commands": "^1.2.2",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -70,7 +72,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint \"src/**/*.js\"",
-    "test": "react-scripts test",
+    "test": "cypress open",
     "test:cov": "npm test -- --coverage --watchAll=false",
     "test:debug": "react-scripts --inspect-brk test --runInBand",
     "eject": "react-scripts eject",
